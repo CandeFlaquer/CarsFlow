@@ -1,0 +1,74 @@
+@import url("/src/App.css");
+
+.table {
+  margin-top: 22px;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+.t-container {
+  border-radius: 15px;
+  overflow: auto;
+}
+thead {
+  background: var(--primary);
+}
+tbody {
+  background: var(--white);
+}
+tbody tr:nth-child(even) {
+  background: var(--primary-400);
+}
+tbody td {
+  text-align: center;
+}
+tbody td:nth-child(1) {
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  margin: 1rem 2rem;
+}
+tr,
+th {
+  padding: 20px;
+}
+thead th:nth-child(1) {
+  width: 20%;
+  border-top-left-radius: 15px;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+thead th:last-child {
+  border-top-right-radius: 15px;
+}
+
+.row-thumbnail {
+  margin-right: 1rem;
+}
+.row-date,
+.row-name p:nth-of-type(2) {
+  color: var(--neutral-600);
+}
+.row-status-paused,
+.row-status-published {
+  /* 104x48 */
+  width: 104px;
+  height: 48px;
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 4px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-status-paused {
+  background-color: var(--warning);
+  color: var(--black);
+}

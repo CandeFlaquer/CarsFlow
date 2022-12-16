@@ -1,0 +1,124 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.modal-container {
+  width: 60vw;
+  height: 80vh;
+  /* max-height: 100%; */
+  background: var(--white);
+  /* max-width: 800px; */
+  border-radius: var(--borderRadius);
+  position: relative;
+  font-weight: 300;
+  font-size: small;
+}
+
+.modal-img {
+  padding: 3rem;
+  width: 60vw;
+  object-fit: cover;
+  height: 80vh;
+}
+
+.sample-btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: var(--secondary);
+}
+.close-btn {
+  position: absolute;
+  cursor: pointer;
+  margin: 1rem 1.5rem;
+  color: var(--neutral-600);
+}
+
+.modal-content {
+  color: var(--white);
+}
+
+.modal-cotent-title,
+.modal-content-price-container,
+.modal-content-imgs {
+  position: absolute;
+  left: 5rem;
+}
+.modal-content-description,
+.modal-content-btns {
+  position: absolute;
+  right: 5rem;
+}
+.modal-content-nav {
+  color: var(--black);
+  position: absolute;
+  left: 50%;
+  bottom: 3rem;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0.5rem;
+  font-size: smaller;
+  font-weight: 400;
+}
+.modal-content-nav :nth-child(1) {
+  border-bottom: 1px solid black;
+}
+.modal-cotent-title {
+  top: 5rem;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal-content-price-container,
+.modal-content-description {
+  top: 7.5rem;
+  width: 15vw;
+}
+.modal-content-price {
+  margin-top: 1rem;
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--secondary);
+}
+.modal-content-imgs {
+  bottom: 7rem;
+}
+.modal-content-imgs :nth-child(1) {
+  border-bottom: 1px solid white;
+}
+.modal-content-imgs :nth-child(2) {
+  padding: 0 2rem;
+}
+.modal-content-description {
+  text-align: end;
+}
+
+.modal-content-btns {
+  bottom: 7rem;
+}
+.modal-content-buy-btn,
+.modal-content-inq-btn {
+  width: 15vw;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+  display: block;
+  text-align: center;
+  border-radius: var(--borderRadius);
+}
+.modal-content-buy-btn {
+  background: var(--secondary);
+}
+.modal-content-inq-btn {
+  border: 2px solid var(--white);
+}
